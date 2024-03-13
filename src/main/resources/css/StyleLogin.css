@@ -1,0 +1,66 @@
+/* scratch_1.css */
+
+/* Áp dụng cho toàn bộ ứng dụng */
+.login-bg {
+    -fx-background-color: #b7b61010c4c4;
+}
+
+/* Áp dụng cho nút và nhãn trong phần trang chủ */
+.login-bg .btn-label {
+    -fx-text-fill: white; /* Màu chữ */
+}
+
+/* Áp dụng cho nút trong phần trang chủ */
+.login-bg .btn-action {
+    -fx-background-radius: 50%; /* Đổi hình dạng nút thành hình tròn */
+}
+
+/* Áp dụng cho nút trong phần đăng nhập */
+.btn-action {
+    -fx-background-color: linear-gradient(to bottom right, #0061ff, #60efff);
+    -fx-text-fill: white;
+}
+
+/* Áp dụng cho nút trong phần đăng kí */
+.btn-action.signup {
+    -fx-background-color: linear-gradient(to bottom right, #40c9ff, #e81cff);
+    -fx-text-fill: white;
+}
+
+/* Ẩn các phần thất bại mặc định */
+.login-fail {
+    -fx-text-fill: transparent;
+}
+
+/* Hiệu ứng khi rê chuột vào nút */
+.btn-action:hover {
+    -fx-background-color: linear-gradient(to bottom right, #004080, #2070a0);
+}
+
+/* Điều chỉnh font chữ cho các phần cần thiết */
+.login-bg .btn-label, .btn-action, .input-field {
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 13px;
+}
+
+/* Áp dụng cho phần trung tâm hỗ trợ */
+.suport {
+    -fx-background-color: #f5f5f5; /* Màu nền */
+}
+
+.suport .suport-label {
+    -fx-font-size: 16px;
+}
+
+.suport .suport-input {
+    -fx-background-color: #ffffff; /* Màu nền ô nhập liệu */
+}
+
+.suport .suport-btn {
+    -fx-background-color: linear-gradient(to bottom right, #0061ff, #60efff);
+    -fx-text-fill: white;
+}
+
+.suport .suport-btn:hover {
+    -fx-background-color: linear-gradient(to bottom right, #004080, #2070a0);
+}

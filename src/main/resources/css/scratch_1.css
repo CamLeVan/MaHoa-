@@ -1,0 +1,15 @@
+.login-bg{
+    -fx-background-color: #f6f6f6;
+}
+.exit{
+    -fx-background-color: #c22c40;
+    -fx-background-radius:5px ;
+    -fx-cursor:hand ;
+}
+.exit:hover{
+
+    -fx-background-color: #f17b72;
+}
+/* linear-gradient(to bottom right, #0061ff,#60efff)
+ linear-gradient(to bottom right, #40c9ff, #e81cff)
+*/

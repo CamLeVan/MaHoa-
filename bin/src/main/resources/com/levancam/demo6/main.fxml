@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainchinh" prefHeight="533.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.levancam.demo6.controllers.MainController">
+   <children>
+      <VBox prefHeight="533.0" prefWidth="178.0" styleClass="vbox" stylesheets="@../../../css/main.css">
+         <children>
+            <Pane prefHeight="73.0" prefWidth="171.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="61.0" layoutY="22.0" prefHeight="30.0" prefWidth="95.0" style="-fx-font-weight: 700; -fx-font-size: 20;" text="Tùy chọn" textFill="WHITE">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imag/dsach.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button id="bt1" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#button_Profile" prefHeight="53.0" prefWidth="178.0" style="-fx-font-weight: 900;" styleClass="vbox" stylesheets="@../../../css/main.css" text="Hồ sơ" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imag/profilee.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button id="bt2" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#button_Progress" prefHeight="53.0" prefWidth="178.0" style="-fx-font-weight: 900;" styleClass="vbox" stylesheets="@../../../css/main.css" text="Tiến độ" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imag/1527543.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button id="bt3" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#buttonOnLeave" prefHeight="53.0" prefWidth="178.0" style="-fx-font-weight: 900;" styleClass="vbox" stylesheets="@../../../css/main.css" text="Nghỉ phép" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imag/calendar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button id="bt4" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#buttonAccount" prefHeight="53.0" prefWidth="178.0" style="-fx-font-weight: 900;" styleClass="vbox" stylesheets="@../../../css/main.css" text="Tài khoản" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imag/person.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button id="bt5" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#buttonList" prefHeight="53.0" prefWidth="178.0" style="-fx-font-weight: 900;" styleClass="vbox" text="DS nhân viên" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imag/list.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="bt6" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#buttonAddProject" prefHeight="53.0" prefWidth="178.0" style="-fx-font-weight: 900;" styleClass="vbox" text="Thêm CV" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imag/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="bt7" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#buttonSupport" prefHeight="53.0" prefWidth="178.0" style="-fx-font-weight: 900;" styleClass="vbox" text="Hỗ trợ" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imag/sp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="bt8" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#exit" prefHeight="53.0" prefWidth="178.0" style="-fx-font-weight: 900;" styleClass="vbox" text="Đăng xuất" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imag/log.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane id="Profile" fx:id="Profile" layoutX="178.0" layoutY="72.0" prefHeight="461.0" prefWidth="479.0" styleClass="list" visible="false">
+         <children>
+            <Label layoutX="40.0" layoutY="110.0" prefHeight="30.0" prefWidth="110.0" style="-fx-font-weight: 800;" text="Mã nhân viên:" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label alignment="CENTER" layoutX="39.0" layoutY="170.0" prefHeight="30.0" prefWidth="62.0" style="-fx-font-weight: 800;" text="Họ tên:" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label layoutX="40.0" layoutY="230.0" prefHeight="30.0" prefWidth="110.0" style="-fx-font-weight: 800;" text="SĐT:" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label layoutX="40.0" layoutY="290.0" prefHeight="30.0" prefWidth="110.0" style="-fx-font-weight: 800;" text="Địa chỉ:" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label layoutX="40.0" layoutY="350.0" prefHeight="30.0" prefWidth="110.0" style="-fx-font-weight: 800;" text="CCCD:" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <ImageView fitHeight="85.0" fitWidth="89.0" layoutX="40.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imag/prf.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="Profile_employeeCode" editable="false" layoutX="157.0" layoutY="110.0" prefHeight="30.0" prefWidth="254.0" styleClass="input-field" stylesheets="@../../../css/login.css">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <TextField fx:id="Profile_fullName" editable="false" layoutX="157.0" layoutY="170.0" prefHeight="30.0" prefWidth="254.0" styleClass="input-field" stylesheets="@../../../css/login.css">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <TextField fx:id="Profile_phoneNumber" editable="false" layoutX="157.0" layoutY="230.0" prefHeight="30.0" prefWidth="254.0" styleClass="input-field">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <TextField fx:id="Profile_Adress" editable="false" layoutX="157.0" layoutY="290.0" prefHeight="30.0" prefWidth="254.0" styleClass="input-field">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <TextField fx:id="HScccd" editable="false" layoutX="157.0" layoutY="350.0" prefHeight="30.0" prefWidth="254.0" styleClass="input-field">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <Label alignment="CENTER" layoutX="181.0" layoutY="15.0" prefHeight="39.0" prefWidth="206.0" style="-fx-font-weight: 900;" text="Hồ sơ của bạn" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="Profile_Confirm" layoutX="294.0" layoutY="409.0" mnemonicParsing="false" onAction="#Profile_Confirm" prefHeight="30.0" prefWidth="103.0" style="-fx-font-weight: 900; -fx-background-color: linear-gradient(to right, #1488cc, #2b32b2); -fx-font-size: 13;" styleClass="btn-action" stylesheets="@../../../css/main.css" text="Xác nhận" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="Profile_edit" layoutX="150.0" layoutY="409.0" mnemonicParsing="false" onAction="#Profile_edit" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: linear-gradient(to right, #4776e6, #8e54e9); -fx-font-weight: 900; -fx-font-size: 13;" styleClass="btn-action" text="Sửa hồ sơ" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="chucvunhanvien" layoutX="210.0" layoutY="50.0" prefHeight="30.0" prefWidth="167.0" style="-fx-font-weight: 900;" text="Chức vụ: Nhân Viên" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="chucvuquanli" layoutX="210.0" layoutY="50.0" prefHeight="30.0" prefWidth="167.0" style="-fx-font-weight: 900;" text="Chức vụ: Quản lí" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="DSnhanvien" layoutX="60.0" layoutY="-96.0" prefHeight="461.0" prefWidth="494.0" stylesheets="@../../../css/main.css" visible="false" />
+         </children>
+         <stylesheets>
+            <URL value="@../../../css/main.css" />
+            <URL value="@../../../css/login.css" />
+         </stylesheets>
+      </AnchorPane>
+      <AnchorPane fx:id="Progress" layoutX="174.0" layoutY="72.0" prefHeight="461.0" prefWidth="487.0" styleClass="list" stylesheets="@../../../css/main.css">
+         <children>
+            <Label layoutX="28.0" layoutY="108.0" prefHeight="30.0" prefWidth="146.0" style="-fx-font-weight: 800;" text="Trạng thái">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="89.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imag/time-management.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="28.0" layoutY="170.0" prefHeight="30.0" prefWidth="154.0" style="-fx-font-weight: 800;" text="Thời gian khởi điểm">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="230.0" prefHeight="30.0" prefWidth="146.0" style="-fx-font-weight: 800;" text="Thời gian kết thúc">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="290.0" prefHeight="30.0" prefWidth="146.0" style="-fx-font-weight: 800;" text="Ghi chú" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Progress_state" editable="false" layoutX="181.0" layoutY="110.0" prefHeight="30.0" prefWidth="245.0" text="Đang hoàn thành giai đoạn 1" />
+            <TextField fx:id="Progress_strartTime" editable="false" layoutX="181.0" layoutY="170.0" prefHeight="30.0" prefWidth="245.0" text="20-12-2023" />
+            <TextField fx:id="Progress_endTime" editable="false" layoutX="181.0" layoutY="230.0" prefHeight="30.0" prefWidth="245.0" text="15-1-2024" />
+            <TextArea fx:id="Progress_note" editable="false" layoutX="181.0" layoutY="290.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="138.0" prefWidth="245.0" promptText="1)Sản xuất lô hàng #123 bắt đầu từ 08:00 sáng. Dự kiến hoàn thành vào cuối ngày hôm nay. Kiểm tra hàng giữa giờ để đảm bảo chất lượng" text="-Lô hàng FX580 bắt đầu từ 08:00 sáng. Dự kiến hoàn thành vào cuối ngày hôm nay. Kiểm tra hàng giữa giờ để đảm bảo chất lượng" wrapText="true">
+               <font>
+                  <Font size="15.0" />
+               </font></TextArea>
+            <Label layoutX="191.0" layoutY="29.0" prefHeight="32.0" prefWidth="226.0" text="Tiến độ công việc">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Button layoutX="20.0" layoutY="342.0" mnemonicParsing="false" onAction="#progress_Edit" prefHeight="35.0" prefWidth="139.0" style="-fx-background-color: linear-gradient(to right, #4776e6, #8e54e9); -fx-background-radius: 50; -fx-font-weight: 800;" styleClass="list" text="Chỉnh sửa tiến độ" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="393.0" mnemonicParsing="false" onAction="#Progress_save" prefHeight="35.0" prefWidth="139.0" style="-fx-background-color: linear-gradient(to right, #4776e6, #8e54e9); -fx-background-radius: 50; -fx-font-weight: 800;" styleClass="list" text="Lưu" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="onLeave" layoutX="178.0" layoutY="72.0" prefHeight="461.0" prefWidth="487.0" styleClass="list" stylesheets="@../../../css/main.css" visible="false">
+         <children>
+            <ImageView fitHeight="85.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imag/leave.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="28.0" layoutY="110.0" prefHeight="30.0" prefWidth="154.0" style="-fx-font-weight: 800;" text="Số phép được nghỉ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="290.0" prefHeight="30.0" prefWidth="146.0" style="-fx-font-weight: 800;" text="Nghỉ phép tới ngày">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="230.0" prefHeight="30.0" prefWidth="146.0" style="-fx-font-weight: 800;" text="Nghỉ phép từ ngày">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="170.0" prefHeight="30.0" prefWidth="146.0" style="-fx-font-weight: 800;" text="Số phép còn lại">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField layoutX="181.0" layoutY="110.0" prefHeight="30.0" prefWidth="245.0" text="10" />
+            <TextField layoutX="181.0" layoutY="290.0" prefHeight="30.0" prefWidth="245.0" />
+            <TextField layoutX="181.0" layoutY="230.0" prefHeight="30.0" prefWidth="245.0" />
+            <TextField layoutX="181.0" layoutY="170.0" prefHeight="30.0" prefWidth="245.0" />
+            <Button layoutX="165.0" layoutY="405.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="129.0" style="-fx-font-weight: 900;" styleClass="list" text="Xác nhận">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label alignment="CENTER" layoutX="181.0" layoutY="23.0" prefHeight="39.0" prefWidth="206.0" text="Nghỉ phép">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Account" layoutX="178.0" layoutY="72.0" prefHeight="461.0" prefWidth="487.0" styleClass="list" stylesheets="@../../../css/main.css" visible="false">
+         <children>
+            <Label layoutX="150.0" layoutY="230.0" prefHeight="30.0" prefWidth="254.0" style="-fx-background-color: #fff;" />
+            <Label layoutX="150.0" layoutY="110.0" prefHeight="30.0" prefWidth="254.0" style="-fx-background-color: #fff;" />
+            <ImageView fitHeight="89.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imag/1144709.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="40.0" layoutY="110.0" prefHeight="30.0" prefWidth="110.0" style="-fx-font-weight: 800;" text="UserName">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            <Label layoutX="40.0" layoutY="170.0" prefHeight="30.0" prefWidth="110.0" style="-fx-font-weight: 800;" text="PassWord">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            <Label layoutX="40.0" layoutY="230.0" prefHeight="30.0" prefWidth="110.0" style="-fx-font-weight: 800;" text="Mã NV" />
+            <Button layoutX="40.0" layoutY="311.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" style="-fx-font-weight: 800;" styleClass="list" text="Đổi mật khẩu">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="277.0" layoutY="311.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" style="-fx-font-weight: 800;" styleClass="list" text="Đăng xuất">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label layoutX="174.0" layoutY="30.0" prefHeight="30.0" prefWidth="206.0" style="-fx-font-weight: 700;" text="Tài khoản của bạn">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="150.0" layoutY="170.0" prefHeight="30.0" prefWidth="254.0" style="-fx-background-color: #fff;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="addProject" layoutX="178.0" layoutY="72.0" prefHeight="461.0" prefWidth="487.0" styleClass="list" stylesheets="@../../../css/main.css" visible="false">
+         <children>
+            <ImageView fitHeight="89.0" fitWidth="125.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imag/suitcase.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="20.0" layoutY="110.0" prefHeight="30.0" prefWidth="110.0" text="Tiêu đề">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            <Label layoutX="20.0" layoutY="170.0" prefHeight="30.0" prefWidth="110.0" text="Mô tả">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            <Label layoutX="20.0" layoutY="260.0" prefHeight="30.0" prefWidth="129.0" text="Thời gian khởi công">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            <Label layoutX="20.0" layoutY="380.0" prefHeight="30.0" prefWidth="110.0" text="Mã quản lí">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            <TextField layoutX="150.0" layoutY="110.0" prefHeight="30.0" prefWidth="254.0" />
+            <TextField layoutX="150.0" layoutY="260.0" prefHeight="30.0" prefWidth="254.0" />
+            <TextField layoutX="150.0" layoutY="380.0" prefHeight="30.0" prefWidth="254.0" />
+            <TextArea layoutX="150.0" layoutY="167.0" prefHeight="64.0" prefWidth="254.0" />
+            <Button layoutX="181.0" layoutY="417.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" styleClass="list" text="Đăng kí">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label layoutX="174.0" layoutY="13.0" prefHeight="64.0" prefWidth="206.0" text="Đăng kí công việc">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="320.0" prefHeight="30.0" prefWidth="110.0" text="Ngày hoàn thành">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            <TextField layoutX="150.0" layoutY="320.0" prefHeight="30.0" prefWidth="254.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Support" layoutX="174.0" layoutY="72.0" prefHeight="461.0" prefWidth="494.0" styleClass="list" stylesheets="@../../../css/main.css" visible="false">
+         <children>
+            <ImageView fitHeight="89.0" fitWidth="125.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imag/customer-service.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="40.0" layoutY="110.0" prefHeight="30.0" prefWidth="110.0" text="Trung tâm hỗ trợ" />
+            <Label layoutX="40.0" layoutY="170.0" prefHeight="30.0" prefWidth="110.0" text="gmail hỗ trợ" />
+            <Label layoutX="40.0" layoutY="230.0" prefHeight="30.0" prefWidth="110.0" text="Holline hỗ trợ" />
+            <Label layoutX="40.0" layoutY="300.0" prefHeight="30.0" prefWidth="110.0" text="Chat trực tuyến tại" />
+            <Label layoutX="40.0" layoutY="370.0" prefHeight="30.0" prefWidth="110.0" text="Đánh giá ứng dụng" />
+            <TextField editable="false" layoutX="150.0" layoutY="110.0" prefHeight="30.0" prefWidth="254.0" text="http://127.0.0.1:5500/index.html" />
+            <TextField editable="false" layoutX="150.0" layoutY="170.0" prefHeight="30.0" prefWidth="254.0" text="levancama2k25@gmail.com" />
+            <TextField editable="false" layoutX="150.0" layoutY="230.0" prefHeight="30.0" prefWidth="254.0" text="0344574050" />
+            <TextField editable="false" layoutX="150.0" layoutY="300.0" prefHeight="30.0" prefWidth="254.0" text="https://www.facebook.com/profile.php?id=100018842990515" />
+            <Label layoutX="127.0" layoutY="23.0" prefHeight="39.0" prefWidth="308.0" text="Bạn có vấn đề cần khắc phục?">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="89.0" fitWidth="121.0" layoutX="209.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imag/rate.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="178.0" prefHeight="73.0" prefWidth="487.0">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="554.0" pickOnBounds="true" preserveRatio="true" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
